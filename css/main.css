@@ -1,0 +1,38 @@
+
+.con {
+    position: relative;
+}
+
+.con .rightPanel {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+#gameRoot,
+#editorRoot {
+    width: 1190px;
+}
+
+#gameRoot .rightPanel {
+    width: 140px;
+}
+
+#scene {
+    height: 600px;
+}
+
+#physics {
+    height: 300px;
+    border: 1px solid black;
+    margin-left: -1px;
+}
+
+#btnPanel, #btnPanel button {
+    font-size: 30px;
+}
+
+#btnPanel .sep {
+    display: inline-block;
+    width: 260px;
+}

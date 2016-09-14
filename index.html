@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Racing
+    </title>
+    
+    <link media="all" rel="stylesheet" href="css/main.css" />
+    
+    <script src="./js/share/thirdparty/jquery.js"></script>
+    <script src="./js/share/thirdparty/jquery.mousewheel.min.js"></script>
+    <script src="./js/share/thirdparty/log4javascript.js"></script>
+    <script src="./js/share/thirdparty/pixi/pixi.min.js"></script>
+    <script src="./js/share/thirdparty/physicsjs/physicsjs-full.min.js"></script>
+    
+    
+    <script src="./js/share/lang.js"></script>
+    <script src="./js/share/log.js"></script>
+    <script src="./js/share/global.js"></script>
+    <script src="./js/share/common/util.js"></script>
+    <script src="./js/share/common/key-util.js"></script>
+    <script src="./js/share/comp/msgService.js"></script>
+    <script src="./js/share/model/colors.js"></script>
+    
+    <script src="./js/app-base.js"></script>
+    <script src="./js/app.js"></script>
+    
+    <script src="./js/packages.js"></script>
+    
+    <script src="./js/model/util.js"></script>
+    <script src="./js/model/msg-type.js"></script>
+    <script src="./js/model/game.js"></script>
+    <script src="./js/model/object-type.js"></script>
+    <script src="./js/model/move-type.js"></script>
+    <script src="./js/model/primitive-type.js"></script>
+    <script src="./js/model/car/car.js"></script>
+    <script src="./js/model/car/car-type.js"></script>
+    <script src="./js/model/car/fn-basic.js"></script>
+    <script src="./js/model/map/map.js"></script>
+    <script src="./js/model/map/block-type.js"></script>
+    <script src="./js/model/map/fn/line.js"></script>
+    <script src="./js/model/point/points.js"></script>
+    <script src="./js/model/point/point-type.js"></script>
+    
+    
+    <script src="./js/physics/game.js"></script>
+    <script src="./js/physics/body-physics-impl.js"></script>
+    
+    
+    <script src="./js/render/root-stage.js"></script>
+    <script src="./js/render/car/player-car.js"></script>
+    <script src="./js/render/map/map-stage.js"></script>
+    <script src="./js/render/map/fn/line.js"></script>
+    <script src="./js/render/point/points-stage.js"></script>
+    
+    
+    
+</head>
+<body>
+    
+    <div id="gameRoot" class="con">
+        
+        <div id="scene"></div>
+
+        <div class="rightPanel">
+
+            <button id="reset">Reset</button>
+
+            <br><br>
+            Score: <span id="score">0</span>
+
+            <br><br>
+            Move by A and D buttons
+            <br><br>
+            Движение машины - кнопки A D
+
+        </div>
+    </div>
+    
+    <small>
+        2016. 
+        Created by <a href='https://github.com/edolganov' target="blank">Evgeny Dolganov</a>.
+        Powered by 
+        <a href='http://www.pixijs.com/' target="blank">PIXI.js</a> 
+        and
+        <a href='http://wellcaffeinated.net/PhysicsJS/' target="blank">PhysicsJS</a>.
+        Have fun! =^____^=
+    </small>
+    
+</body>
+</html>
