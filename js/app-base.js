@@ -6,10 +6,6 @@ var AppBase = {
         var w = 1024;
         var h = 600;
         
-        if(BrowserUtil.isMobile()){
-           
-        }
-        
         var out = {
 
             w: w,
