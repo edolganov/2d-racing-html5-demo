@@ -48,6 +48,10 @@
         -webkit-transform:rotate(90deg) scale(1.2); 
         -moz-transform:rotate(90deg) scale(1.2);
     }
+    
+    .mobile body {
+        padding-right: 40px;
+    }
 }
 
 .mobile {
