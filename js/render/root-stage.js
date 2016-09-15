@@ -87,10 +87,18 @@ render.RootStage = function(w, h, game){
             cameraZoomStep(isZoom);
         });
         
-        canvas.addEventListener('gestureend', function(e) {
-            var isZoom = e.scale > 1.0;
+//        canvas.addEventListener('gestureend', function(e) {
+//            var isZoom = e.scale > 1.0;
+//            cameraZoomStep(isZoom);
+//        }, false);
+        
+        
+        $(canvas).bind('touchy-pinch', function(e, target, data){
+            var isZoom = data.scale > 1.0;
             cameraZoomStep(isZoom);
-        }, false);
+        });
+        
+        
         
         var btnRight = $("#moveRight");
         btnRight.mousedown(function(){
