@@ -36,3 +36,20 @@
     display: inline-block;
     width: 260px;
 }
+
+@page { 
+    size: landscape;
+}
+
+/* @media all and (orientation:landscape) {} */
+
+@media all and (orientation:portrait) {
+    .mobile {
+        
+    }
+}
+
+.mobile {
+
+}
+

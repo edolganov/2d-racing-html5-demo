@@ -6,6 +6,7 @@ $(function(){
 
 function App(){
     
+    $("html").addClass("mobile");
     
     var msgService = MsgService.namedService("App");
    
