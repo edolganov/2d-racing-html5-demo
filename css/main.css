@@ -57,8 +57,9 @@
 .moveBtn {
     position: absolute;
     font-size: 60px;
-    top: 450px;
-    display: none;
+    height: 200px;
+    width: 260px;
+    top: 380px;                                                                                                                display: none;
     -webkit-user-select: none;      
     -moz-user-select: none;
 }
