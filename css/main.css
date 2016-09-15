@@ -59,6 +59,8 @@
     font-size: 60px;
     top: 450px;
     display: none;
+    -webkit-user-select: none;      
+    -moz-user-select: none;
 }
 
 #moveLeft {
