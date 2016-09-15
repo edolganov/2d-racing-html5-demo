@@ -107,7 +107,14 @@ render.RootStage = function(w, h, game){
         btnLeft.mousedown(function(){
             game.car().startBrakes();
         });
+        btnLeft.on('touchstart', function(){
+            game.car().startBrakes();
+        });
+        
         btnLeft.mouseup(function(){
+            game.car().stopBrakes();
+        });
+        btnLeft.on('touchend', function(){
             game.car().stopBrakes();
         });
         
