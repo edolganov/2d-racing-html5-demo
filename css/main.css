@@ -41,19 +41,6 @@
     size: landscape;
 }
 
-/* @media all and (orientation:landscape) {} */
-
-@media all and (orientation:portrait) {
-    .mobile {
-        -webkit-transform:rotate(90deg) scale(1.0); 
-        -moz-transform:rotate(90deg) scale(1.0);
-    }
-    
-    .mobile body {
-        padding-left: 220px;
-    }
-}
-
 .moveBtn {
     position: absolute;
     font-size: 60px;
