@@ -6,8 +6,6 @@ $(function(){
 
 function App(){
     
-    $("html").addClass("mobile");
-    
     var msgService = MsgService.namedService("App");
    
     var score = 0;
