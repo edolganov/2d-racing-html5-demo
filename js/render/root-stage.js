@@ -91,7 +91,14 @@ render.RootStage = function(w, h, game){
         btnRight.mousedown(function(){
             game.car().startAccelerator();
         });
+        btnRight.on('touchstart', function(){
+            game.car().startAccelerator();
+        });
+        
         btnRight.mouseup(function(){
+            game.car().stopAccelerator();
+        });
+        btnRight.on('touchend', function(){
             game.car().stopAccelerator();
         });
         
