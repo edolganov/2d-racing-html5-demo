@@ -50,11 +50,26 @@
     }
     
     .mobile body {
-        padding-left: 200px;
+        padding-left: 220px;
     }
 }
 
-.mobile {
+.moveBtn {
+    position: absolute;
+    font-size: 60px;
+    top: 450px;
+    display: none;
+}
 
+#moveLeft {
+    left: 20px;
+}
+
+#moveRight {
+    left: 750px;
+}
+
+.mobile .moveBtn {
+    display: inline;
 }
 
