@@ -79,3 +79,18 @@
     display: inline;
 }
 
+.mobileScore {
+    position: absolute;
+    font-size: 60px;
+    height: 250px;
+    width: 260px;
+    top: 350px;
+    left: 450px;
+    color:rgba(0,0,0,0.5);
+    display: none;
+}
+
+.mobile .mobileScore {
+    display: inline;
+}
+

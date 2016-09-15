@@ -21,7 +21,7 @@ function App(){
     var mapStage;
     var carStage;
     var pointsStage;
-    var scoreElem = $("#score");
+    var scoreElem = $(".scoreElem");
     
     var p;
     
