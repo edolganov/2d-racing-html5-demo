@@ -57,11 +57,14 @@
 .moveBtn {
     position: absolute;
     font-size: 60px;
-    height: 200px;
+    height: 250px;
     width: 260px;
-    top: 380px;                                                                                                                display: none;
+    top: 350px;
+    display: none;
     -webkit-user-select: none;      
     -moz-user-select: none;
+    background: rgba(0,0,0,0.0); 
+    color:rgba(0,0,0,0.5);
 }
 
 #moveLeft {
