@@ -9,6 +9,8 @@ function App(){
     var msgService = MsgService.namedService("App");
    
     var score = 0;
+    var totalScore = 0;
+    var levelIsDone = false;
     
     //model
     var map;
@@ -43,7 +45,14 @@ function App(){
             x: initCarX,
             y: initCarY
         });
+        
         points = new model.point.Points();
+        points.addListener({
+            onPointAdded: function(){
+                totalScore++;
+            }
+        })
+        
         game = new model.Game(map, car, points);
 
         rootStage = new render.RootStage(p.w, p.h, game);
@@ -64,18 +73,35 @@ function App(){
         if( ! p.usePhysicsRender)
             $("#physics").hide();
         
-        updateScore();
+        updateScoreLabel();
         
         
         //events
         msgService.bind(model.MsgType.CAR_ADD_SCORE, function(){
             score++;
-            updateScore();
+            updateLevelState();
+            updateScoreLabel();
         })
     }
     
-    function updateScore(){
-        scoreElem.text(score);
+    function updateScoreLabel(){
+        scoreElem.text(score + " / " + totalScore);
+    }
+    
+    function updateLevelState(){
+        
+        if(levelIsDone)
+            return;
+        
+        if(score < totalScore)
+            return;
+        
+        levelIsDone = true;
+        
+        setTimeout(function(){
+            alert("You are the Best! \n Thank you for a game :)");
+        }, 1000);
+        
     }
     
     function createMap01(){

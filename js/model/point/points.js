@@ -33,7 +33,8 @@ model.point.Points = function(opt){
         body.pointData = point;
         
         $.each(listeners, function(i, l){
-           l.onPointAdded(point); 
+            if(l.onPointAdded)
+                l.onPointAdded(point); 
         });
         
     }
@@ -44,7 +45,8 @@ model.point.Points = function(opt){
         
         var point = body.pointData;
         $.each(listeners, function(i, l){
-           l.onPointHit(point); 
+            if(l.onPointHit)
+                l.onPointHit(point); 
         });
     }
     
